@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>A short introduction to DDD - CQRS - Event sourcing</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -25,8 +25,8 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>A short introduction to</h1>
-					<h2>DDD - CQRS - Event sourcing</h2>
+					<h2>A short introduction to</h2>
+					<h1>DDD - CQRS - Event sourcing</h1>
 
 					<p>
 						<small>Created by <a href="http://github.com/manumouton">Manu Mouton</a> / <a href="http://twitter.com/manumouton">@manumouton</a></small>
@@ -36,23 +36,47 @@
 				<section>
 					<section>
 						<h2>DDD</h2>
-						<h3>aka</h3>
+						<h4>aka</h4>
 						<h2>Domain Driven Design</h2>
 					</section>
 
 					<section>
+						<ul>
+							<li>Focus on the business logic</li>
+							<li>Definition of the model via <i>Bounded contexts</i></li>
+							<li>Definition of an <i>Ubiquitous language</i></li>
+							<li>Collaboration between Business and IT teams!</li>
+						</ul>
+					</section>
 
+					<section>
+						<h4>Bounded contexts</h4>
+						<img src="img/context_definition.png">
+					</section>
+
+					<section>
+						<h4>Ubiquitous language</h4>
+						<img src="img/customer_needs.jpg">
 					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>CQRS</h2>
-						<h3>aka</h3>
+						<h4>aka</h4>
 						<h2>Command Query Responsibility Segregation</h2>
 					</section>
-					<section>
 
+					<section>
+						<ul>
+							<li>Split between WRITE & READ actions</li>
+							<li>Commands vs Queries</li>
+							<li>Gain of performances</li>
+						</ul>
+					</section>
+					
+					<section>
+						<img src="img/cqsr_pattern.png">
 					</section>
 				</section>
 
@@ -62,7 +86,26 @@
 					</section>
 
 					<section>
+						<ul>
+							<li>Every state of the application captured in an event</li>
+							<li>Current state = Sequence of events</li>
+						</ul>
+					</section>
 
+					<section>
+						<img src="img/event_handler.jpeg">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Putting all together</h2>
+
+						<h4>or getting started with Apache Kafka!</h4>
+					</section>
+					
+					<section>
+						<img src="img/event_sourced_based_architecture.jpeg">
 					</section>
 				</section>
 
