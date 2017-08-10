@@ -29,7 +29,10 @@
 					<h1>DDD - CQRS - Event sourcing</h1>
 
 					<p>
-						<small>Created by <a href="http://github.com/manumouton">Manu Mouton</a> / <a href="http://twitter.com/manumouton">@manumouton</a></small>
+						<small>Created by <a href="http://github.com/manumouton">Manu Mouton</a></small>
+					</p>
+					<p>
+						<small><a href="http://twitter.com/manumouton">@manumouton</a></small>
 					</p>
 				</section>
 
@@ -51,7 +54,7 @@
 
 					<section>
 						<h4>Bounded contexts</h4>
-						<img src="img/context_definition.png">
+						<img src="img/bounded-context1.png">
 					</section>
 
 					<section>
@@ -68,6 +71,7 @@
 					</section>
 
 					<section>
+						<h4>CQRS</h4>
 						<ul>
 							<li>Split between WRITE & READ actions</li>
 							<li>Commands vs Queries</li>
@@ -86,9 +90,16 @@
 					</section>
 
 					<section>
+						<h4>Event sourcing</h4>
 						<ul>
-							<li>Every state of the application captured in an event</li>
+							<li>Every state change is captured in an event</li>
 							<li>Current state = Sequence of events</li>
+							<li>Ability to rebuild your data
+								<ul>
+									<li>From a different point of view</li>
+									<li>Timeline mode</li>
+								</ul>
+							</li>
 						</ul>
 					</section>
 
@@ -100,8 +111,15 @@
 				<section>
 					<section>
 						<h2>Putting all together</h2>
+					</section>
 
-						<h4>or getting started with Apache Kafka!</h4>
+					<section>
+						<ul>
+							<li>Kafka as the command / event bus</li>
+							<li>Multiple consumers of the generated events</li>
+							<li>JSON Api and domain language</li>
+							<li>Open tracing / Instana</li>
+						</ul>
 					</section>
 					
 					<section>
